@@ -7,7 +7,7 @@ describe('Twilio API', () => {
         return request
             .get('/Accounts')
             //encode authorization info into base64 format
-            .set("Authorization", "basic " + new Buffer("ACa9a7213e512e392303cf0e8084ccf109:f6af451aa9aeacc10655e7fb8c5164fa").toString("base64"))
+            .set("Authorization", "basic " + new Buffer("userName:passWord").toString("base64"))
             .expect(200)
     })
 })
